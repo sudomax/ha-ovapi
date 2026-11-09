@@ -1,0 +1,48 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "OV-halte toevoegen",
+        "description": "Voer het haltenummer (Timing Point Code) in dat op het haltebord staat (bus, tram, metro, veer of regionale trein).",
+        "data": {
+          "stop_code": "Haltenummer (TPC)",
+          "line_number": "Lijnnummer(s) (optioneel)"
+        },
+        "data_description": {
+          "stop_code": "7- of 8-cijferig haltenummer, bijv. 30005029 voor Amsterdam, Centraal Station.",
+          "line_number": "Laat leeg om alle lijnen te volgen, of vul specifieke lijn(en) in gescheiden door komma's (bijv. 26 of 7, 39)."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Kan geen verbinding maken met de OVapi-server. Controleer je internetverbinding.",
+      "stop_not_found": "Het haltenummer is niet gevonden. Controleer de code op het haltebord.",
+      "unknown": "Er is een onverwachte fout opgetreden. Controleer de logboeken en probeer het opnieuw."
+    },
+    "abort": {
+      "already_configured": "Deze halte en lijnselectie is al geconfigureerd."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "next_departure": {
+        "name": "Volgend vertrek"
+      },
+      "departure": {
+        "name": "Vertrek {index}"
+      },
+      "line_next_departure": {
+        "name": "Lijn {line} volgend vertrek"
+      },
+      "line_departure": {
+        "name": "Lijn {line} vertrek {index}"
+      },
+      "lines_next_departure": {
+        "name": "Lijnen {lines} volgend vertrek"
+      },
+      "lines_departure": {
+        "name": "Lijnen {lines} vertrek {index}"
+      }
+    }
+  }
+}

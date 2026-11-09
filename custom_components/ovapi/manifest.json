@@ -1,0 +1,11 @@
+{
+  "domain": "ovapi",
+  "name": "Dutch Public Transport (OVapi)",
+  "codeowners": ["@sudomax"],
+  "config_flow": true,
+  "documentation": "https://github.com/sudomax/ha-ovapi",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/sudomax/ha-ovapi/issues",
+  "version": "1.0.0"
+}

@@ -1,0 +1,48 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add Transit Stop",
+        "description": "Enter the Timing Point Code (Haltenummer) shown on your Dutch public transit stop sign (bus, tram, metro, ferry, or regional train).",
+        "data": {
+          "stop_code": "Timing Point Code (TPC)",
+          "line_number": "Line number(s) (optional)"
+        },
+        "data_description": {
+          "stop_code": "7 or 8-digit stop code, e.g. 30005029 for Amsterdam, Centraal Station.",
+          "line_number": "Leave empty to track all lines, or enter specific line(s) separated by commas (e.g. 26 or 7, 39)."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to the OVapi server. Please verify your internet connection.",
+      "stop_not_found": "The Timing Point Code was not found. Please verify your stop code.",
+      "unknown": "An unexpected error occurred. Please check logs and try again."
+    },
+    "abort": {
+      "already_configured": "This stop and line selection is already configured."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "next_departure": {
+        "name": "Next Departure"
+      },
+      "departure": {
+        "name": "Departure {index}"
+      },
+      "line_next_departure": {
+        "name": "Line {line} Next Departure"
+      },
+      "line_departure": {
+        "name": "Line {line} Departure {index}"
+      },
+      "lines_next_departure": {
+        "name": "Lines {lines} Next Departure"
+      },
+      "lines_departure": {
+        "name": "Lines {lines} Departure {index}"
+      }
+    }
+  }
+}

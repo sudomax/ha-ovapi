@@ -1,0 +1,48 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Ajouter un arrêt de transport",
+        "description": "Saisissez le code d'arrêt (Timing Point Code / Haltenummer) indiqué sur le panneau de votre arrêt aux Pays-Bas (bus, tram, métro, ferry ou train régional).",
+        "data": {
+          "stop_code": "Code de l'arrêt (TPC)",
+          "line_number": "Numéro(s) de ligne (optionnel)"
+        },
+        "data_description": {
+          "stop_code": "Code à 7 ou 8 chiffres, par ex. 30005029 pour Amsterdam, Centraal Station.",
+          "line_number": "Laissez vide pour suivre toutes les lignes, ou indiquez une ou plusieurs lignes séparées par des virgules (par ex. 26 ou 7, 39)."
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Impossible de se connecter au serveur OVapi. Veuillez vérifier votre connexion Internet.",
+      "stop_not_found": "Code d'arrêt introuvable. Veuillez vérifier le numéro indiqué à l'arrêt.",
+      "unknown": "Une erreur inattendue s'est produite. Consultez les journaux et réessayez."
+    },
+    "abort": {
+      "already_configured": "Cet arrêt et cette sélection de lignes sont déjà configurés."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "next_departure": {
+        "name": "Prochain départ"
+      },
+      "departure": {
+        "name": "Départ {index}"
+      },
+      "line_next_departure": {
+        "name": "Ligne {line} prochain départ"
+      },
+      "line_departure": {
+        "name": "Ligne {line} départ {index}"
+      },
+      "lines_next_departure": {
+        "name": "Lignes {lines} prochain départ"
+      },
+      "lines_departure": {
+        "name": "Lignes {lines} départ {index}"
+      }
+    }
+  }
+}
