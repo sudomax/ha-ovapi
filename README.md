@@ -4,6 +4,9 @@ Real-time departures for buses, trams, metros, ferries, and regional trains acro
 
 ![Home Assistant](https://img.shields.io/badge/Home%20Assistant-Custom%20Integration-blue.svg)
 ![HACS](https://img.shields.io/badge/HACS-Custom-orange.svg)
+[![Validate](https://github.com/sudomax/ha-ovapi/actions/workflows/validate.yml/badge.svg)](https://github.com/sudomax/ha-ovapi/actions/workflows/validate.yml)
+[![Tests & Lint](https://github.com/sudomax/ha-ovapi/actions/workflows/tests.yml/badge.svg)](https://github.com/sudomax/ha-ovapi/actions/workflows/tests.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 ---
 
@@ -29,10 +32,11 @@ Every Dutch transit stop pole has its **Haltenummer** (Timing Point Code — a 7
 ## 🚀 Installation
 
 ### Option 1: Via HACS (Recommended)
-1. Open **HACS** in Home Assistant.
-2. Click the three dots (top right) → **Custom repositories**.
-3. Add `https://github.com/sudomax/ha-ovapi` with category **Integration**.
-4. Download **Dutch Public Transport (OVapi)** and restart Home Assistant.
+
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=sudomax&repository=ha-ovapi&category=integration)
+
+1. Click the **Open HACS Repository** button above (or open **HACS** in Home Assistant → three dots top right → **Custom repositories** → add `https://github.com/sudomax/ha-ovapi` with category **Integration**).
+2. Download **Dutch Public Transport (OVapi)** and restart Home Assistant.
 
 ### Option 2: Manual Installation
 1. Copy the `custom_components/ovapi` folder into your Home Assistant `config/custom_components/` directory.
